@@ -1,0 +1,17 @@
+##############################################################################
+# .htaccess - raiz
+##############################################################################
+Options +FollowSymLinks
+IndexIgnore */*
+
+# Turn on the RewriteEngine
+RewriteEngine On
+
+#  Rules
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|sitemaps\.xml|images|userfiles|sitemaps|include|js|css|xml)
+RewriteRule ^^(.*)$ index.php
+##############################################################################
+# .htacess - dentro de cada pasta
+##############################################################################

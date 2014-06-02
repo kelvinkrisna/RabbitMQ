@@ -1,0 +1,31 @@
+/* 
+    Document   : pesquisar
+    Created on : 23/04/2013, 15:25:48
+    Author     : kelvin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#iimp{
+    border: 1px solid #ADB7C1;
+    color: #8D9AA7;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 8pt;
+    height: 23px;
+    padding-left: 3px;
+    width: 400px;
+}
+#bbb{
+    background: url("../img/bgBotaoAzul.gif") repeat-x scroll left top transparent;
+    border: 0 none;
+    border-radius: 2px 12px 12px 2px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 7pt;
+    font-weight: bold;
+    height: 25px;
+    padding: 0 10px;	
+}
+

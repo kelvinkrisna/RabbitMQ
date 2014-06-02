@@ -1,0 +1,13 @@
+{
+    "name": "krisna-consultoria/viconcursos-com-br",
+    "description": "Descrição do projeto viconcursos.com.br.",
+    "authors": [
+        {
+            "name": "kelvin",
+            "email": "contato@viconcursos.com"
+        }
+    ],
+    "require": {
+
+    }
+}

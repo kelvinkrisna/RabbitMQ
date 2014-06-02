@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <title>Vi Concursos - Tudo sobre concursos no brasil</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="http://localhost:8003/newlayout/css/reset.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="http://localhost:8003/newlayout/css/style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="http://localhost:8003/newlayout/css/menu.css" media="screen" />
+        <!--[if IE]>
+           <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="http://localhost:8003/newlayout/js/jquery.js"></script> 
+        <script type="text/javascript" src="http://localhost:8003/newlayout/js/tabs.js"></script> 
+        <script type="text/javascript" src="http://localhost:8003/newlayout/js/geral.js"></script> 
+        <script type="text/javascript" src="http://localhost:8003/newlayout/js/watermark.js"></script> 
+    </head>
+    <body>
+        <script>
+            var el = document.getElementsByTagName("body")[0];
+            el.className = "";
+        </script>
+        <noscript>
+        <!--[if IE]>
+            <link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+        </noscript>
+        <header>
+            <div id="header">
+                <div id="logoTopo">
+                    <a href="localhost:8003" title="Página Inicial V&iacute;oncursos">
+                        <img src="http://localhost:8003/img/logo.png" title="Concursos P&uacute;blicos" alt="Concursos P&uacute;blicos" /></a>
+                </div>
+                <div id="infosTopo">
+                    <div id="nosite">No site...</div>
+                    <div id="p">5000 <span>Vagas</span></div>
+                    <div id="p">5000 <span>Provas e Gab.</span></div>
+                    <div id="p">5000 <span>Dicas e Info.</span></div>
+                    <div id="p">5000 <span>Pessoas Online</span></div>
+                </div>
+                <div id="buscaTopo">
+                    <div id="sigaTitulo">Siga-nos</div>
+                    <div id="sigaIcones">
+                        <ul id="menuxb">
+                            <li><a title="Twitter" href="http://www.twitter.com/viconcursos" target="_blank" class="twitter"><span>Twitter</span></a></li>
+                            <li><a title="Facebook" href="https://www.facebook.com/viconcursos" target="_blank" class="facebook"><span>Facebook</span></a></li>
+                        </ul>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div style="float:left"> 
+                        <h4>Buscar</h4><br>
+                        <span id="buscalk">Concursos P&uacute;blicos</span>
+                        <span id="buscalk">Vídeo Aulas</span>
+                        <span id="buscalk">Dicas</span>
+                    </div>
+                    <form action="{$url}pesquisar/geral" id="cse-search-box" style="float:left;">
+                        <table width="200" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="180">
+                                    <input type="hidden" name="cx" value="partner-pub-6905686321259168:3948882104" />
+                                    <input type="hidden" name="cof" value="FORID:10" />
+                                    <input type="hidden" name="ie" value="UTF-8" />
+                                    <input type="search" name="q" class="inputBusca"  placeholder="Buscar por concursos" />
+                                </td>
+                                <td><input type="submit" class="botaoVermelhoxx" name="sa" value="Ok" /></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <script type="text/javascript" src="http://www.google.com.br/coop/cse/brand?form=cse-search-box&amp;lang=pt"></script>
+                </div>
+                <div id="bloconovidade">
+                    <br />
+                    <h4>Receba nossas novidades</h4>
+                    <ul>
+                        <li id="recebe-novidades">
+                            <input class="inputRodape" name="Buscar" id="nomenews" type="text" placeholder="Seu nome" />
+                        </li>
+                        <li id="recebe-novidades">
+                            <input class="inputRodape" name="emailnews" id="emailnews" type="text" placeholder="Seu e-mail" />
+                        </li>
+                        <li id="recebe-novidades">
+                            <input class="botaoVermelho" type="submit" name="Ok" id="cadnews" value="Cadastrar" style="height:22px" />
+                            <span id="avisonews"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <nav id="topNav">
+            <ul>  
+                <li><a href="#" title="Nav Link 1">Nav Link 1</a></li>  
+                <li>  
+                    <a href="#" title="Nav Link 1">Nav Link 2  
+                        <ul>    
+                            <li><a href="#" title="Sub Nav Link 1">Sub Nav Link 1</a></li>  
+                            <li><a href="#" title="Sub Nav Link 2">Sub Nav Link 2</a></li>  
+                            <li><a href="#" title="Sub Nav Link 3">Sub Nav Link 3</a></li>  
+                            <li><a href="#" title="Sub Nav Link 4">Sub Nav Link 4</a></li>  
+                            <li class="last"><a href="#" title="Sub Nav Link 5">Sub Nav Link 5</a></li>  
+                        </ul>                  
+                </li>  
+                <li><a href="#" title="Nav Link 1">Nav Link 3</a></li>  
+                <li><a href="#" title="Nav Link 1">Nav Link 4</a></li>  
+                <li><a href="#" title="Nav Link 1">Nav Link 5</a></li>  
+            </ul>
+        </nav>
+        <section>
+            Teste
+        </section>
+        <aside>
+            teste
+        </aside> 
+        <footer>
+            testes
+        </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script>
+            (function($) {
+
+                //cache nav
+                var nav = $("#topNav");
+
+                //add indicator and hovers to submenu parents
+                nav.find("li").each(function() {
+                    if ($(this).find("ul").length > 0) {
+                        $("<span>").text("^").appendTo($(this).children(":first"));
+
+                        //show subnav on hover
+                        $(this).mouseenter(function() {
+                            $(this).find("ul").stop(true, true).slideDown();
+                        });
+
+                        //hide submenus on exit
+                        $(this).mouseleave(function() {
+                            $(this).find("ul").stop(true, true).slideUp();
+                        });
+                    }
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

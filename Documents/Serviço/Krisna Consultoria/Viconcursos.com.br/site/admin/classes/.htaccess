@@ -1,0 +1,20 @@
+##############################################################################
+# .htaccess - raiz
+##############################################################################
+Options +FollowSymLinks
+IndexIgnore */*
+
+# Turn on the RewriteEngine
+RewriteEngine On
+
+#  Rules
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^^(.*)$ index.php?var=$1&id=$2
+RewriteRule ^sitemap\.xml$ gera_xml.php [L] 
+##############################################################################
+# .htacess - dentro de cada pasta
+##############################################################################
+
+
+ 
